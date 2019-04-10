@@ -197,8 +197,6 @@ ResourcePref resources[] = {
  */
 static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
-	{ Button4,              XK_ANY_MOD,     "\031" },
-	{ Button5,              XK_ANY_MOD,     "\005" },
 	{ Button4,              XK_NO_MOD,      "\031" },
 	{ Button5,              XK_NO_MOD,      "\005" },
 };
@@ -249,6 +247,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_J,           zoom,           {.f = -1} },
 	{ MODKEY|ShiftMask,     XK_U,           zoom,           {.f = +2} },
 	{ MODKEY|ShiftMask,     XK_D,           zoom,           {.f = -2} },
+	{ MODKEY|ShiftMask,	XK_0,		zoomreset,	{.f =  0} },
     	{ MODKEY,		XK_l,		externalpipe,	{ .v = openurlcmd } },
 };
 
